@@ -21,9 +21,9 @@ const App = () => {
     setsearchRobot(e.target.value);
   }
 
-  const robotSearched = robots.filter((robot:any) => {
-    return robot.name.toLowerCase().includes(searchRobot.toLowerCase());
-  });
+  const robotSearched = robots.filter((robot:any) => 
+    robot.name.toLowerCase().includes(searchRobot.toLowerCase()))
+;
 
   return (
     <div>
