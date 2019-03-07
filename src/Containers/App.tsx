@@ -26,7 +26,7 @@ const App = () => {
   return (
     <div>
       <h1>Robot Land</h1>
-      {(robots.length === 0) ? ( <h1>Loading</h1>) : (
+      {(!robots) ? ( <h1>Loading</h1>) : (
         <div>
         <Search onSearch={onSearchChanges}/>
         <Scroll>
