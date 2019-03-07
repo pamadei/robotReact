@@ -13,6 +13,8 @@ const App = () => {
     .then(response => response.json())
     .then(data => {setRobots(data)})
     .catch(err => console.log(err))
+
+    document.title = searchRobot;
   });
 
   const onSearchChanges = (e:any) => {
